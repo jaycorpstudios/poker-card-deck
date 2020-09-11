@@ -8,8 +8,9 @@ body {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 400px));
   gap: 20px;
+  justify-content: center;
   justify-items: center;
   align-items: center;
   min-height: 100vh;
@@ -24,6 +25,13 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  transition: 150ms ease-out;
+  transition-property: transform, box-shadow;
+}
+.card:hover {
+  transform: scale(1.1) rotateZ(5deg);
+  z-index: 1;
+  box-shadow: 0 0 25px rgba(0,0,0,.5);
 }
 /* Shared atributes */
 .card.heart, .card.diamond {
