@@ -1,11 +1,20 @@
+:root {
+  --document-bg-color: rgb(35, 11, 24);
+  --card-bg-color: rgb(255,255,255);
+  --card-primary-type-color: rgb(168,2,2);
+  --card-secondary-type-color: rgb(0,0,0);
+  --card-shadow-color: rgba(0,0,0,.5);
+}
+
 body {
   margin: 0;
   padding: 20px;
-  background-color: rgb(35, 11, 24);
+  background-color: var(--document-bg-color);
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 60px;
 }
 
+/* Layout */
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min-content, 400px));
@@ -20,7 +29,7 @@ body {
 .card {
   width: 400px;
   height: 570px;
-  background-color: white;
+  background-color: var(--card-bg-color);
   border-radius: 20px;
   background-position: center;
   background-size: cover;
@@ -31,14 +40,15 @@ body {
 .card:hover {
   transform: scale(1.1) rotateZ(5deg);
   z-index: 1;
-  box-shadow: 0 0 25px rgba(0,0,0,.5);
+  box-shadow: 0 0 25px var(--card-shadow-color);
 }
+
 /* Shared atributes */
 .card.heart, .card.diamond {
-  color: rgb(168,2,2);
+  color: var(--card-primary-type-color);
 }
-.card.spades, .card.club {
-  color: black;
+.card.spade, .card.club {
+  color: var(--card-secondary-type-color);
 }
 .card:before, .card:after {
   content: attr(data-type);
