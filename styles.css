@@ -1,7 +1,23 @@
+:root {
+  --document-bg-color: rgb(35, 11, 24);
+  --card-bg-color: rgb(255,255,255);
+  --card-primary-type-color: rgb(168,2,2);
+  --card-secondary-type-color: rgb(0,0,0);
+  --card-shadow-color: rgba(0,0,0,.5);
+}
+
 body {
   margin: 0;
   padding: 20px;
-  background-color: rgb(24, 14, 20);
+  background-color: var(--document-bg-color);
   font-family: 'Quattrocento Sans', sans-serif;
   font-size: 60px;
 }
+
+/* Layout */
+
+/* Cards */
+
+/* Shared atributes */
+
+/* Card Images */

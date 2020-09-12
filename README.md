@@ -7,4 +7,4 @@ Card system:
 ![Card system](https://res.cloudinary.com/jaycorpstudios/image/upload/v1599863574/scalablepress/sp-university/Card_System_bjn5lu.jpg)
 
 Final product on branch:
-TBD
+  * feat/final-version
